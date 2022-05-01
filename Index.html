@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <head>
+        <h1>Offer Letter Generator</h1>
+        <h2>Lionbrige Technologies - India </h2>
+    </head>
+    <form id="candidate-details" action="offer-letter.html" action="offer-letter-SA.html" method="GET">
+         <div class="title">
+             <h2>Candidate Details</h2>
+         </div>
+        <!-- Candidate Full Name -->
+        <div class="input-group">
+            <label for="fname"> Candidate Full Name as per Aadhar </label>
+            <input type="text" id="fname" placeholder="Candidate Full Name" name="fname">
+        </div>
+        <!-- Candidate Current Location -->
+        <div class="input-group">
+            <label for="currentlocation"> Candidate Current Location </label>
+            <input type="text" id="candidatelocation" placeholder="Enter Candidate Current Location" name="candidatelocation" required>
+        </div>
+        <!-- Candidate Joining Location -->
+        <div class="input-group">
+            <label for="joininglocation"> Candidate Joining Location </label>
+            <select id="dropdown" name="joininglocation" required>
+                <option disabled selected value> Select Joining Location </option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Noida">Noida</option>
+            </select>
+        </div>
+        <!-- Designation -->
+        <div class="input-group">
+            <label for="designation"> Designation </label>
+            <input type="text" id="designation" placeholder="Enter Designation" name="designation" required>
+        </div>
+        <!-- Grade -->
+        <div class="input-group">
+            <label for="grade"> Grade </label>
+            <input type="text" id="grade" placeholder="Enter Grade" name="grade" required>
+        </div>
+        <!-- Notice-Period -->
+        <div class="input-group">
+            <label for="notice"> Notice Period </label>
+            <select id="dropdown" name="notice" required>
+                <option disabled selected value> Select Notice Period </option>
+                <option value="60 days">60 days</option>
+                <option value="90 days">90 days</option>
+            </select>
+        </div>
+        <!-- Date-of-joining -->
+        <div class="input-group">
+            <label for="date"> Date of Joining</label>
+            <input type="date" id="date" placeholder="Date of Joining" name="date" required>
+        </div>
+
+        <!-- Date-of-generation -->
+        <div class="input-group">
+            <label for="dateg"> Date of letter generation</label>
+            <input type="date" id="dateg" placeholder="Date of Letter Generation" name="dateg" required>
+        </div>
+
+        <button type="submit" class="btn"> Generate Offer With Service Agreemtent </button>
+        <button type="submit" class="btn"> Generate Offer Without Service Agreemtent </button>
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
